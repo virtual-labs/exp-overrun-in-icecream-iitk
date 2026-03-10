@@ -1,0 +1,148 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #aacccc;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ccf0f9;
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  height: 10vh;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  border-bottom: 3px solid #000;
+}
+
+#ins {
+  font-size: 1.8vw;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-right: 2vw;
+}
+
+#text {
+  font-size: 1.5vw;
+  color: #faff00;
+}
+
+.footer {
+  position: absolute;
+  top: 10vh;
+  width: 100%;
+  height: 90vh;
+  background-color: #e5f5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#experiment {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fffbe0;
+  overflow: hidden;
+}
+
+#lab-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#freezer,
+#freezer_open,
+#mix-cup,
+#cup-icecream,
+#thermo {
+  position: absolute;
+  width: 10%;
+  height: auto;
+  transition: all 0.5s;
+  z-index: 2;
+}
+
+#freezer { top: 30%; left: 10%; }
+#freezer_open { top: 30%; left: 10%; }
+#mix-cup { top: 50%; left: 25%; }
+#cup-icecream { top: 50%; left: 25%; }
+#thermo { top: 20%; left: 80%; }
+
+#start-btn {
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+  padding: 0.6vw 1.5vw;
+  font-size: 1.2vw;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background-color: limegreen;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  animation: blinking 1s infinite;
+  z-index: 3;
+}
+
+#start-btn:active {
+  transform: scale(0.95);
+  transition: transform 0.2s;
+}
+
+#popup {
+  position: absolute;
+  width: 40%;
+  height: 10%;
+  left: 30%;
+  top: 40%;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  z-index: 5;
+}
+
+#popup-message {
+  font-size: 1.5vw;
+  color: #d10000;
+  text-align: center;
+}
+
+#result-area {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-size: 1.8vw;
+  font-weight: bold;
+  color: #000;
+  z-index: 4;
+}
+
+@keyframes blinking {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
