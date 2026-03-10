@@ -1,13 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Overrun Determination</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-		<!-- Your code goes here-->
+  <main class="main">
+    <div class="header" id="header">
+      <h1 id="ins">Instructions:</h1>
+      <h1 id="text">Welcome to the Ice Cream Overrun Simulation</h1>
+    </div>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+    <div class="footer">
+      <div id="experiment">
+        <!-- Background Lab Setup -->
+        <img id="lab-bg" src="images/lab-background.png" alt="Lab Background">
+
+        <!-- Equipment and Components -->
+        <img id="freezer" src="images/freezer_closed.png" onclick="startSterilization()" alt="Freezer">
+        <img id="freezer_open" src="images/freezer_open.png" style="display:none" alt="Freezer Open">
+
+        <img id="mix-cup" src="images/cup_mix.png" style="display:none" onclick="pourMix()" alt="Ice Cream Mix Cup">
+        <img id="cup-icecream" src="images/cup_icecream.png" style="display:none" alt="Frozen Ice Cream Cup">
+        <img id="thermo" src="images/thermometer.png" alt="Thermometer">
+
+        <!-- Interactive Overrun Result Area -->
+        <div id="result-area">
+          <h2>Overrun: <span id="overrun-result">--</span>%</h2>
+        </div>
+
+        <!-- Pop-up Message Box -->
+        <div id="popup">
+          <h2 id="popup-message">Sterilize the machine before use.</h2>
+        </div>
+
+        <!-- Start Button -->
+        <button id="start-btn" onclick="beginExperiment()">START</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Script to Control Steps -->
+  <script src="script/icecream.js"></script>
 </body>
 </html>
