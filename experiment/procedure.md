@@ -18,4 +18,4 @@ Procedure  <br>
 9.	Calculations:<br>
 Volume of melted ice-cream (ml)= V1-10-10<br>
 Volume of frozen ice-cream (ml)= 200<br>
-<image src="images\image_1.png"><br>
+<image src="images\image_1.png.png"><br>
