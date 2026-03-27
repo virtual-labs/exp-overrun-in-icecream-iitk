@@ -17,5 +17,5 @@ Procedure  <br>
 8.	Record the final volume (V1) in the measuring cylinder.<br>
 9.	Calculations:<br>
 Volume of melted ice-cream (ml)= V1-10-10<br>
-Volume of frozen ice-cream (ml)= 200
-img src
+Volume of frozen ice-cream (ml)= 200<br>
+<image src="images\image_1.png"><br>
