@@ -3,46 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ice Cream Overrun Determination</title>
+    <title>Determination of Overrun in Ice Cream</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="body">
   <main class="main">
     <div class="header" id="header">
-      <h1 id="ins">Instructions:</h1>
-      <h1 id="text">Welcome to the Ice Cream Overrun Simulation</h1>
+      <h1 id="ins">Instructions :-</h1>
+      <h1 id="text"> Press start button to start the experiment .</h1>
     </div>
 
     <div class="footer">
       <div id="experiment">
-        <!-- Background Lab Setup -->
-        <img id="lab-bg" src="images/lab-background.png" alt="Lab Background">
+        <img id="workingtable" src="images/bgAsset.png" alt="">
 
-        <!-- Equipment and Components -->
-        <img id="freezer" src="images/freezer_closed.png" onclick="startSterilization()" alt="Freezer">
-        <img id="freezer_open" src="images/freezer_open.png" style="display:none" alt="Freezer Open">
+      
+        <div id="step1">
+          
+          <!-- <img id="machine" src="images/wheighing-machine.png" alt=""> -->
+          <img id="spatula" onclick="spatula1()" src="images/spatula.png" alt="">
+          <!-- <button id="on" onclick="on1()">ON</button> -->
+          <!-- <button id="tare" onclick="tare1()">TARE</button> -->
+          <!-- <h3 id="reading">00.00</h3> -->
+          
+          <img id="wbathback" src="images/standard-water-bath.png" alt="">
 
-        <img id="mix-cup" src="images/cup_mix.png" style="display:none" onclick="pourMix()" alt="Ice Cream Mix Cup">
-        <img id="cup-icecream" src="images/cup_icecream.png" style="display:none" alt="Frozen Ice Cream Cup">
-        <img id="thermo" src="images/thermometer.png" alt="Thermometer">
+          <img class="sample" id="samp1" src="images/spatula-icecream.png" alt="">
+          <img class="sample" id="samp2" src="images/spatula-icecream.png" alt="">
+          <img class="sample" id="samp3" src="images/spatula-icecream.png" alt="">
+          <img class="sample" id="samp4" src="images/spatula-icecream.png" alt="">
+          <img class="sample" id="samp5" src="images/spatula-icecream.png" alt="">
+          <img class="sample" id="samp6" src="images/spatula-icecream.png" alt="">
+          <img class="sample" id="samp7" src="images/spatula-icecream.png" alt="">
+          <img class="sample" id="samp8" src="images/spatula-icecream.png" alt="">
+          
+          <div id="beakerdiv">
+            <img id="beakersol" src="images/beaker - 250ml-sol.png" alt="">
+            <img id="beaker" onclick="beaker1()" src="images/beaker - 250ml.png" alt="">
+          </div>
 
-        <!-- Interactive Overrun Result Area -->
-        <div id="result-area">
-          <h2>Overrun: <span id="overrun-result">--</span>%</h2>
+          <img id="icebottle" src="images/frozen-icecream.png" alt="">
+          <img id="icecap" onclick="cap1()" src="images/frozen-icecream-cap.png" alt="">
+
+
+          <div id="wbath">
+            <img id="wbathfront" src="images/standard-water-bath-front.png" alt="">
+
+            <div id="tempscreen">
+              <h1 id="temptext">00</h1>
+              <h1 id="celcius">C</h1>
+              <h1 id="temptext1">00</h1>
+              <h1 id="celcius1">C</h1>
+            </div>
+
+            <button id="plusbtn" onclick="plusnew1()">+</button>
+            <button id="minusbtn" onclick="minusnew1()">-</button>
+            <button id="onoffbtn" onclick="onoffnew1()"></button>
+          </div>
+
+          <img id="funnel" src="images/funnel.png" alt="">
+
+          <div id="mcyldiv">
+
+            <img id="mcyl" src="images/measuring cylinder 250ml.png" alt="">
+          </div>
+
+
+
+
+
+
+
         </div>
 
-        <!-- Pop-up Message Box -->
-        <div id="popup">
-          <h2 id="popup-message">Sterilize the machine before use.</h2>
-        </div>
+          
 
-        <!-- Start Button -->
-        <button id="start-btn" onclick="beginExperiment()">START</button>
+
+
+
+
+        <button id="start" onclick="start()" >START</button>
       </div>
     </div>
   </main>
-
-  <!-- Script to Control Steps -->
-  <script src="script/icecream.js"></script>
+  <script src="script/project.js"></script>
+  <script src="script/step1.js"></script>
+  <script src="script/step2.js"></script>
+  <script src="script/step3.js"></script>
+  <script src="script/bypass.js"></script>
 </body>
 </html>
