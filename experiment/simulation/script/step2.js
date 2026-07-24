@@ -157,4 +157,118 @@ function beaker1(){
             },1000)
         },1000)
     }
+    else if(f==18){
+        f=19
+        beakerdiv.style.top="30%"
+        setTimeout(function(){
+            beakerdiv.style.left="68%"
+            setTimeout(function(){
+                beakerdiv.style.rotate="-30deg"
+                setTimeout(function(){
+                    beakerdiv.style.transitionDuration="4s"
+                    beakersol.style.transitionDuration="4s"
+                    beakerdiv.style.rotate="-90deg"
+                    beakerdiv.style.top="12%"
+                    beakerdiv.style.left="67%"
+                    beakersol.style.height="0%"
+                    beakersol.style.bottom="5%"
+                    msol.style.transitionDuration="4s"
+                    msol.style.height="17%"
+                    setTimeout(function(){
+                        beakerdiv.style.transitionDuration="1s"
+                        beakersol.style.transitionDuration="1s"
+                        beakerdiv.style.rotate=""
+                        beakerdiv.style.left="70%"
+                        beakerdiv.style.top="30%"
+                        setTimeout(function(){
+                            beakerdiv.style.left=""
+                            beakerdiv.style.top=""
+                            setTimeout(function(){
+                                f=20
+                                ins.innerText="Click on distilled water bottle to measure 10ml of water and pour inside beaker."
+                            },1000)
+                        },1000)
+                    },4500)
+                },1000)
+
+            },1000)
+        },1000)
+    }
+    else if(f==24){
+        f=25
+        beakerdiv.style.top="30%"
+        setTimeout(function(){
+            beakerdiv.style.left="68%"
+            setTimeout(function(){
+                beakerdiv.style.rotate="-30deg"
+                setTimeout(function(){
+                    beakerdiv.style.transitionDuration="4s"
+                    beakersol.style.transitionDuration="4s"
+                    beakerdiv.style.rotate="-90deg"
+                    beakerdiv.style.top="12%"
+                    beakerdiv.style.left="67%"
+                    beakersol.style.height="0%"
+                    beakersol.style.bottom="5%"
+                    msol.style.transitionDuration="4s"
+                    msol.style.height="20%"
+                    setTimeout(function(){
+                        beakerdiv.style.transitionDuration="1s"
+                        beakersol.style.transitionDuration="1s"
+                        beakerdiv.style.rotate=""
+                        beakerdiv.style.left="70%"
+                        beakerdiv.style.top="30%"
+                        setTimeout(function(){
+                            beakerdiv.style.left=""
+                            beakerdiv.style.top=""
+                            trial="second"
+                            setTimeout(function(){
+                                f=20
+                                ins.innerText="Again click on distilled water bottle to measure 10ml of water and pour inside beaker."
+                            },1000)
+                        },1000)
+                    },4500)
+                },1000)
+
+            },1000)
+        },1000)
+
+    }
+    else if(f==28){
+        f=29
+        beakerdiv.style.top="30%"
+        setTimeout(function(){
+            beakerdiv.style.left="68%"
+            setTimeout(function(){
+                beakerdiv.style.rotate="-30deg"
+                setTimeout(function(){
+                    beakerdiv.style.transitionDuration="4s"
+                    beakersol.style.transitionDuration="4s"
+                    beakerdiv.style.rotate="-90deg"
+                    beakerdiv.style.top="12%"
+                    beakerdiv.style.left="67%"
+                    beakersol.style.height="0%"
+                    beakersol.style.bottom="5%"
+                    msol.style.transitionDuration="4s"
+                    msol.style.height="24%"
+                    setTimeout(function(){
+                        beakerdiv.style.transitionDuration="1s"
+                        beakersol.style.transitionDuration="1s"
+                        beakerdiv.style.rotate=""
+                        beakerdiv.style.left="70%"
+                        beakerdiv.style.top="30%"
+                        setTimeout(function(){
+                            beakerdiv.style.left=""
+                            beakerdiv.style.top=""
+                            setTimeout(function(){
+                                f=30
+                                // ins.innerText="Note down the volume shown in 250ml measuring cylinder! 'The volume is 75ml' ."
+                                ins.innerText="Click on funnel to remove it from measuring cylinder and put it back"
+                            },1000)
+                        },1000)
+                    },4500)
+                },1000)
+
+            },1000)
+        },1000)
+    }
 }

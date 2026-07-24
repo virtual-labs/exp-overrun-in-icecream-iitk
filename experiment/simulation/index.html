@@ -37,6 +37,10 @@
           <img class="sample" id="samp7" src="images/spatula-icecream.png" alt="">
           <img class="sample" id="samp8" src="images/spatula-icecream.png" alt="">
           
+          <img id="funnel" onclick="funnel1()" src="images/funnel.png" alt="">
+          
+          <img id="fsol" src="images/measuring-cylinder-solution.png" alt="">
+          
           <div id="beakerdiv">
             <img id="beakersol" src="images/beaker - 250ml-sol.png" alt="">
             <img id="beaker" onclick="beaker1()" src="images/beaker - 250ml.png" alt="">
@@ -61,22 +65,57 @@
             <button id="onoffbtn" onclick="onoffnew1()"></button>
           </div>
 
-          <img id="funnel" src="images/funnel.png" alt="">
 
           <div id="mcyldiv">
-
+            <img id="msol" src="images/measuring cylinder 250ml-sol.png" alt="">
             <img id="mcyl" src="images/measuring cylinder 250ml.png" alt="">
           </div>
+          
 
+          <div id="diswaterdiv">
+            <img id="diswatersol" src="images/distilled-water-solution.png" alt="">
+            <img id="diswater" onclick="diswater1()" src="images/distilled water-reflected.png" alt="">
+          </div>
+          
 
-
-
-
-
-
+          <div id="mcyldiv1">
+            <img id="msol1" src="images/measuring-cylinder-solution.png" alt="">
+            <img id="mcyl1" onclick="mcyl11()" src="images/measuring cylinder 10ml.png" alt="">
+          </div>
         </div>
 
-          
+        <div id="last">
+
+          <h3 id="overrun">Overrun (%) = <input type="number" maxlength="2" max="99" min="0" step="1.0" id="overruninput" style="color:blue" placeholder="Overrun"></h3>
+          <button id="checkbtn" onclick="checker()">Check</button>
+          <button id="resultbtn" onclick="result()">Result</button>
+          <h3 id="resulter">Right answer</h3>
+          <h1 id="ftext" onclick="fhider()">Click me to show formula</h1>
+          <img id="formula" src="images/formula.png" alt="">
+
+
+
+
+
+          <table id="tbl1">
+            <tr>
+              <th>Sample</th>
+              <th>Volume of frozen <br> ice-cream (ml) <br>(V1)</th>
+              <th>Final volume <br> of the mix (ml)</th>
+              <th>Volume of rinse <br> water (ml)</th>
+              <th>Volume of melted <br>ice-cream (ml) <br>(V2)</th>
+              <th>Overrun (%)</th>
+            </tr>
+            <tr>
+              <td>Milk</td>
+              <td>100</td>
+              <td>75</td>
+              <td>20</td>
+              <td>55</td>
+              <td id="overrunresult"></td>
+            </tr>
+          </table>
+        </div>
 
 
 
@@ -90,6 +129,7 @@
   <script src="script/step1.js"></script>
   <script src="script/step2.js"></script>
   <script src="script/step3.js"></script>
+  <script src="script/step4.js"></script>
   <script src="script/bypass.js"></script>
 </body>
 </html>
