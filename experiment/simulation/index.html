@@ -1,13 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determination of Overrun in Ice Cream</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-		<!-- Your code goes here-->
+<body id="body">
+  <main class="main">
+    <div class="header" id="header">
+      <h1 id="ins">Instructions :-</h1>
+      <h1 id="text"> Press start button to start the experiment .</h1>
+    </div>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+    <div class="footer">
+      <div id="experiment">
+        <img id="workingtable" src="images/bgAsset.png" alt="">
+
+      
+        <div id="step1">
+          
+          <!-- <img id="machine" src="images/wheighing-machine.png" alt=""> -->
+          <img id="spatula" onclick="spatula1()" src="images/spatula.png" alt="">
+          <!-- <button id="on" onclick="on1()">ON</button> -->
+          <!-- <button id="tare" onclick="tare1()">TARE</button> -->
+          <!-- <h3 id="reading">00.00</h3> -->
+          
+          <img id="wbathback" src="images/standard-water-bath.png" alt="">
+
+          <img class="sample" id="samp1" src="images/spatula-icecream.png" alt="">
+          <img class="sample" id="samp2" src="images/spatula-icecream.png" alt="">
+          <img class="sample" id="samp3" src="images/spatula-icecream.png" alt="">
+          <img class="sample" id="samp4" src="images/spatula-icecream.png" alt="">
+          <img class="sample" id="samp5" src="images/spatula-icecream.png" alt="">
+          <img class="sample" id="samp6" src="images/spatula-icecream.png" alt="">
+          <img class="sample" id="samp7" src="images/spatula-icecream.png" alt="">
+          <img class="sample" id="samp8" src="images/spatula-icecream.png" alt="">
+          
+          <img id="funnel" onclick="funnel1()" src="images/funnel.png" alt="">
+          
+          <img id="fsol" src="images/measuring-cylinder-solution.png" alt="">
+          
+          <div id="beakerdiv">
+            <img id="beakersol" src="images/beaker - 250ml-sol.png" alt="">
+            <img id="beaker" onclick="beaker1()" src="images/beaker - 250ml.png" alt="">
+          </div>
+
+          <img id="icebottle" src="images/frozen-icecream.png" alt="">
+          <img id="icecap" onclick="cap1()" src="images/frozen-icecream-cap.png" alt="">
+
+
+          <div id="wbath">
+            <img id="wbathfront" src="images/standard-water-bath-front.png" alt="">
+
+            <div id="tempscreen">
+              <h1 id="temptext">00</h1>
+              <h1 id="celcius">C</h1>
+              <h1 id="temptext1">00</h1>
+              <h1 id="celcius1">C</h1>
+            </div>
+
+            <button id="plusbtn" onclick="plusnew1()">+</button>
+            <button id="minusbtn" onclick="minusnew1()">-</button>
+            <button id="onoffbtn" onclick="onoffnew1()"></button>
+          </div>
+
+
+          <div id="mcyldiv">
+            <img id="msol" src="images/measuring cylinder 250ml-sol.png" alt="">
+            <img id="mcyl" src="images/measuring cylinder 250ml.png" alt="">
+          </div>
+          
+
+          <div id="diswaterdiv">
+            <img id="diswatersol" src="images/distilled-water-solution.png" alt="">
+            <img id="diswater" onclick="diswater1()" src="images/distilled water-reflected.png" alt="">
+          </div>
+          
+
+          <div id="mcyldiv1">
+            <img id="msol1" src="images/measuring-cylinder-solution.png" alt="">
+            <img id="mcyl1" onclick="mcyl11()" src="images/measuring cylinder 10ml.png" alt="">
+          </div>
+        </div>
+
+        <div id="last">
+
+          <h3 id="overrun">Overrun (%) = <input type="number" maxlength="2" max="99" min="0" step="1.0" id="overruninput" style="color:blue" placeholder="Overrun"></h3>
+          <button id="checkbtn" onclick="checker()">Check</button>
+          <button id="resultbtn" onclick="result()">Result</button>
+          <h3 id="resulter">Right answer</h3>
+          <h1 id="ftext" onclick="fhider()">Click me to show formula</h1>
+          <img id="formula" src="images/formula.png" alt="">
+
+
+
+
+
+          <table id="tbl1">
+            <tr>
+              <th>Sample</th>
+              <th>Volume of frozen <br> ice-cream (ml) <br>(V1)</th>
+              <th>Final volume <br> of the mix (ml)</th>
+              <th>Volume of rinse <br> water (ml)</th>
+              <th>Volume of melted <br>ice-cream (ml) <br>(V2)</th>
+              <th>Overrun (%)</th>
+            </tr>
+            <tr>
+              <td>Milk</td>
+              <td>100</td>
+              <td>75</td>
+              <td>20</td>
+              <td>55</td>
+              <td id="overrunresult"></td>
+            </tr>
+          </table>
+        </div>
+
+
+
+
+
+        <button id="start" onclick="start()" >START</button>
+      </div>
+    </div>
+  </main>
+  <script src="script/project.js"></script>
+  <script src="script/step1.js"></script>
+  <script src="script/step2.js"></script>
+  <script src="script/step3.js"></script>
+  <script src="script/step4.js"></script>
+  <script src="script/bypass.js"></script>
 </body>
 </html>
