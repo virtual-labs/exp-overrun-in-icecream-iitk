@@ -1,12 +1,11 @@
-Procedure <br>
-Requirements (Instruments, Chemicals & Other)<br>
+<b> Requirements (Instruments, Chemicals & Other) : </b><br>
 1.	Beaker<br>
 2.	Graduated cylinders (200 ml)<br>
 3.	Spatula<br>
 4.	Water Bath<br>
 5.	Funnel<br>
 
-Procedure  <br>
+<b> Procedure : </b> <br>
 1.	Take a 100 ml frozen ice cream cup. <br>
 2.	Empty the frozen ice cream to a 200 ml beaker using spatula.<br>
 3.	Set the temperature of water bath to 49℃. <br>
