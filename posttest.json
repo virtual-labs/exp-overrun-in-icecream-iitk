@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1.Which instrument is used to measure melted ice cream volume?",
+      "answers": {
+        "a": "Pipette",
+        "b": "Measuring cylinder",
+        "c": "Burette",
+        "d": "pH meter"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2.Overrun is calculated based on:",
+      "answers": {
+        "a": "Weight difference",
+        "b": "Volume difference",
+        "c": "Temperature change",
+        "d": "Fat content"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3.Excessive overrun results in:",
+      "answers": {
+        "a": "Hard texture",
+        "b": "Weak body and poor flavor",
+        "c": "Increased fat content",
+        "d": "High acidity"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4.Ideal overrun improves:",
+      "answers": {
+        "a": "Shelf life only",
+        "b": "Texture and palatability",
+        "c": "Only color",
+        "d": "Only acidity"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5.During melting, ice cream should be kept at approximately:",
+      "answers": {
+        "a": "10°C",
+        "b": "25°C",
+        "c": "49°C",
+        "d": "80°C"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}
